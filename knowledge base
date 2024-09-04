@@ -1,0 +1,56 @@
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+        <DisplayString ElementID="##CompanyID##.##AppName##.##UniqueID##.##MonitorName##.Monitor">
+          <Name>##CompanyID## ##AppName## SHORT CERT Monitor</Name>
+        </DisplayString>
+        <DisplayString ElementID="##CompanyID##.##AppName##.##UniqueID##.##MonitorName##.Monitor" SubElementID="GoodCondition">
+          <Name>GoodCondition</Name>
+        </DisplayString>
+        <DisplayString ElementID="##CompanyID##.##AppName##.##UniqueID##.##MonitorName##.Monitor" SubElementID="BadCondition">
+          <Name>BadCondition</Name>
+        </DisplayString>
+		  <DisplayString ElementID="##CompanyID##.##AppName##.##UniqueID##.##MonitorName##.Monitor" SubElementID="CriticalCondition">
+			  <Name>CriticalCondition</Name>
+		  </DisplayString>		  
+        <DisplayString ElementID="##CompanyID##.##AppName##.##UniqueID##.##MonitorName##.Monitor.AlertMessage">
+          <Name>##CompanyID## ##AppName## #what is the# Error</Name>
+          <Description>
+			  ##CompanyID## ##AppName## #counter for# {0} days on server {5}.
+			  Hostname: {5}
+			  Message: {1}
+			  Certificate location: {2}
+			  The threshold for the warning alert is: {3}
+			  The threshold for the critical alert is: {4}
+		  </Description>
+        </DisplayString>		
+      </DisplayStrings>
+		<KnowledgeArticles>
+			<KnowledgeArticle ElementID="##CompanyID##.##AppName##.##UniqueID##.##MonitorName##.Monitor" Visible="true">
+				<MamlContent>
+					<maml:section xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
+						<maml:title>Summary</maml:title>
+						<maml:para>
+							#information#.
+							#information#.
+						</maml:para>
+					</maml:section>
+					<maml:section xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
+						<maml:title>Causes</maml:title>
+						<maml:para>The #what ever is needed# is either missing or the expiry date is below the acceptable threshold. </maml:para>
+					</maml:section>
+					<maml:section xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
+						<maml:title>Resolutions</maml:title>
+						<maml:para>
+							#Tell us what to do 
+							#Steps to take#.
+							#who should be notified?#
+							#BlaBla what action to take#
+						</maml:para>
+					</maml:section>
+				</MamlContent>
+			</KnowledgeArticle>
+		</KnowledgeArticles>		
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPackFragment>
